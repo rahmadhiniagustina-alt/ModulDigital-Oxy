@@ -797,7 +797,7 @@ elif menu == "🎮 Kuis":
         belum_diisi = [item["tanya"][:4] for item in soal_list if jawaban_user[item["id"]] is None]
         
         if belum_diisi:
-            st.warning("⚠️ Tolong isi semua pertanyaan terlebih dahulu! Nomor yang belum diisi")
+            st.warning("⚠️ Tolong isi semua pertanyaan terlebih dahulu!")
             st.session_state.kuis_disubmit = False
         else:
             # Hitung skor akhir
